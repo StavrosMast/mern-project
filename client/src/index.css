@@ -1,0 +1,30 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* src/index.css or src/App.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: hsla(0, 0%, 0%, 1);
+  color: #f3f3f3;
+  cursor: none;
+  overflow-x: hidden;
+}
+a,
+button {
+  cursor: none;
+}
+
+/* header, footer {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    text-align: center;
+} */
+
+/* main {
+    padding: 20px;
+} */

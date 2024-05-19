@@ -1,0 +1,28 @@
+/* src/components/CursorCircle.css */
+.cursor-circle {
+    position: fixed;
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    backdrop-filter: blur(2px); /* Blurred background */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Shiny border effect */
+    animation: shine 1.5s infinite linear; /* Animation for shiny border */
+    z-index: 99999;
+}
+
+/* Keyframes for the shiny border animation */
+@keyframes shine {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+}
